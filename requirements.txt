@@ -5,3 +5,5 @@ lightning
 omegaconf
 tensorboard
 wandb
+jupyter-black
+torchmetrics

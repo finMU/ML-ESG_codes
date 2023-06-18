@@ -1,13 +1,14 @@
-seed: -
+seed: 42
+amp: true
 pretrained_model: microsoft/deberta-v3-base
 
 datamodule:
-  train_path: train_data.parquet
-  val_path: /valid_data.parquet
+  train_path: D:/dev/ML-ESG_codes/data/eng.parquet
+  val_path: D:/dev/ML-ESG_codes/data/eng_val.parquet
   tokenizer_name: null
   use_title: true
-  use_cls_weight: true
-  batch_size: 32
+  use_cls_weight: false
+  batch_size: 4
 
 model:
   model_name: null
@@ -17,9 +18,7 @@ model:
 
 train:
   learning_rate: 3e-5
-  num_epochs: 15
-  val_check_interval: 0.5
+  num_epochs: 3
 
 callbacks:
-  mode: "min"
-  monitor: "train_loss"
+  monitor: "val_loss"

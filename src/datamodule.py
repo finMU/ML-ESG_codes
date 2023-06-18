@@ -10,7 +10,7 @@ from transformers import AutoTokenizer
 from collections import Counter
 from typing import List, Tuple, Dict
 
-from .label_dict import LABEL_IDX_DICT, IDX_LABEL_DICT
+from label_dict import LABEL_IDX_DICT, IDX_LABEL_DICT
 
 
 class ESGDataModule:
