@@ -1,0 +1,9 @@
+sentencepiece
+protobuf==3.20.*
+pyarrow
+lightning
+omegaconf
+tensorboard
+wandb
+jupyter-black
+torchmetrics
